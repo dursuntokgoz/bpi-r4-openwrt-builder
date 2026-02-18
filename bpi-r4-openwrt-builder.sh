@@ -4,7 +4,7 @@ set -euo pipefail
 rm -rf openwrt
 rm -rf mtk-openwrt-feeds
 
-git clone --branch openwrt-24.10 https://git.openwrt.org/openwrt/openwrt.git openwrt
+git clone --branch openwrt-25.12 https://git.openwrt.org/openwrt/openwrt.git openwrt
 cd openwrt; git checkout 5774c8b316eff80070775ee695d998ad3ee828d1; cd -;		#mediatek: add Motorcomm PHY support to Cudy AP3000 v1
 
 git clone --branch master https://git01.mediatek.com/openwrt/feeds/mtk-openwrt-feeds
