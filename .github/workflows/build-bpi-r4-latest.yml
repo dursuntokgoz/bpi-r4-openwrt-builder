@@ -5,6 +5,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   build:
@@ -143,15 +144,15 @@ jobs:
               per_page: 100
             });
 
-            // všechny releasy s tagem bpi-r4-latest
+            // vÅ¡echny releasy s tagem bpi-r4-latest
             const autoReleases = releases.data.filter(
               rel => rel.tag_name === 'bpi-r4-latest'
             );
 
-            // seøadit (nejnovìjší první)
+            // seÃ¸adit (nejnovÃ¬jÅ¡Ã­ prvnÃ­)
             autoReleases.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
-            // nechat nejnovìjší, ostatní smazat
+            // nechat nejnovÃ¬jÅ¡Ã­, ostatnÃ­ smazat
             const toDelete = autoReleases.slice(1);
 
             for (const rel of toDelete) {
@@ -165,3 +166,4 @@ jobs:
             }
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
