@@ -500,7 +500,6 @@ CONFIG_PACKAGE_luci-i18n-wireguard-tr=y
 CONFIG_PACKAGE_tops-tool=y
 CONFIG_PACKAGE_tops-tool-autoload=y
 CONFIG_PACKAGE_ethswbox=y
-CONFIG_PACKAGE_libkcapi=y
 CONFIG_PACKAGE_mt76-vendor=y
 CONFIG_PACKAGE_altitude-tool=y
 CONFIG_PACKAGE_mtk_failsafe=y
